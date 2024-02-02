@@ -1,0 +1,37 @@
+The '5-text_indentation' module
+==========================
+
+using 'text_indentation'
+-------------------
+
+First import 'text_indentation' from '5-text_indentation':
+	
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Then use it:
+
+	>>> text_indentation(["text"])
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation("Hi. Who are you? I am: Bob")
+	Hi.
+	<BLANKLINE>
+	Who are you?
+	<BLANKLINE>
+	I am:
+	<BLANKLINE>
+	Bob
+
+	>>> text_indentation("this is a one line string, that should not be splited.")
+	this is a one line string, that should not be splited.
+	<BLANKLINE>
+
+	>>> text_indentation("?.:")
+	?
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+
