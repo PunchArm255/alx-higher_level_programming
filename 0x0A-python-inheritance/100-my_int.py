@@ -7,6 +7,7 @@ Functions and Classes:
 
 
 class MyInt(int):
+    """the rubel of the integer dynasty"""
     def __eq__(self, other):
         if self.real == other.real:
             return False
